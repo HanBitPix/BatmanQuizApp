@@ -7,6 +7,7 @@
 body{
   font-family: 'Roboto Condensed', sans-serif;
   background-color: rgb(0, 0, 0);
+  color: blue;
 }
 
 p{
@@ -40,4 +41,48 @@ header{
   color: #2699FB;
 }
 
+/** Main **/
 
+main{
+  display: none;
+  margin-top: 20rem;
+}
+
+.card{
+  border-radius: 10px;
+}
+
+label{
+  font-size: 2rem;
+}
+
+/* Modal Content */
+
+.modal-content{
+  color: green;
+  font-weight: bold;
+}
+
+.modal-btn{
+  background-color: #2699FB;
+}
+
+.answerKey{
+  font-weight: bold;
+  color: #2699FB;
+}
+
+.correct-answer{
+  color: #2699FB;
+}
+
+/* Results */
+
+.results{
+  display:none;
+  margin-top: 10rem;
+}
+
+th{
+  color: #2699FB;
+}

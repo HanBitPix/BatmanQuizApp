@@ -45,7 +45,7 @@ Q02 What city is Batman from?
   Star City
   Gotham City -- Answer
 
-Q03 What is superpower does Batman have?
+Q03 What superpower does Batman have?
   Super strength
   Flight
   Speed
