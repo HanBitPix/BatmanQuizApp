@@ -31,7 +31,7 @@ $( "#target" ).submit(function(event) {
   if (userCurrentAnswer == 0){
     // Modal when user does not select an answer
     $('.modal-body').html(`<h3 class="modal-title" id="exampleModalLongTitle">No Escaping! Select an Answer!</h3>
-    <img class="img-fluid" src="Images/Riddler.png" alt="Riddler shows up"/>`);
+    <img class="img-fluid" src="img/riddler.png" alt="Riddler shows up"/>`);
   }
  
   //1.B If answer is selected will compare and show if its the correct answer
@@ -41,7 +41,7 @@ $( "#target" ).submit(function(event) {
     if (userCurrentAnswer === answerKey(questionCounter-1)){
       // Modal for correct answer
       $('.modal-body').html(`<h3 class="modal-title correct-answer" id="exampleModalLongTitle">Great Job! Justice Shall Prevail!</h3>
-      <img class="img-fluid" src="Images/Batman.png" alt="Batman shows up"/>`);
+      <img class="img-fluid" src="img/batman.png" alt="Batman shows up"/>`);
       // Correct Answer Counter
       correctAnswerCounter++;
       $('.correctAnswerCounter').text(correctAnswerCounter);
@@ -76,7 +76,7 @@ $( "#target" ).submit(function(event) {
       // Modal: Incorrect = Joker Shows Up
       $('.modal-body').html(`<h3 class="modal-title" id="exampleModalLongTitle">WRONG ANSWER! Correct answer is: </h3>
       <p class="answerKey">${answerKey(questionCounter-1)}</p>
-      <img class="img-fluid" src="Images/Joker.png" alt="Joker shows up"/>
+      <img class="img-fluid" src="img/joker.png" alt="Joker shows up"/>
       <p>You must be a villian ;)</p>`);
       // Incorrect Answer Counter
       incorrectAnswerCounter++;

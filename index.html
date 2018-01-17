@@ -5,19 +5,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-  <link rel="stylesheet" href="main.css" type='text/css'>
+  <link rel="stylesheet" href="css/main.css" type='text/css'>
 </head>
 
 <body>
+    <!-- 1 The starting screen should have a button that users can click to start the quiz. -->
     <header class='container text-center'>
         <h2 class='display-4 my-2 text-white'>How well do you know</h4>
-        <img class="img-fluid rounded my-3" id="batman-logo" src="Images/Batman-Icon.png"></img>
+        <img class="img-fluid rounded my-3" id="batman-logo" src="img/batman-logo.png"></img>
         <h2 class='batman-text display-3'>BATMAN?</h2>
         <p class='text-white mt-2'>Questions will get harder as you progress!</p> 
         <button type="button" class="start-button btn btn-outline-primary btn-lg d-block mx-auto my-3">START</button>
     </header>
 
-
+  
   <!-- // Modal -->
       <div class="modal-pop">
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -34,6 +35,10 @@
         </div>
       </div> 
 
+    <!-- 2 Users should be prompted through a series of at least 5 multiple choice questions that they can answer.
+          2.1 Users should be asked questions 1 after the other.
+          2.2 Users should only be prompted with 1 question at a time.
+          2.3 Users should not be able to skip questions. -->
     <!-- Question Card -->
     <main class='container-fluid'>
       <div class="card text-center col-12 col-xl-6 mx-auto">
@@ -45,6 +50,7 @@
         </div>
         <!-- Questions -->
         <div class="card-body">
+          <!-- Render answer choices in a <form>. -->
           <form id="target">
           </form>
         </div>
@@ -91,7 +97,7 @@
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="QA.js"></script>
-    <script type="text/javascript" src="index.js"></script>  
+    <script type="text/javascript" src="js/qa.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>  
 </body>
 </html>
