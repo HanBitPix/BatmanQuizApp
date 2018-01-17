@@ -1,16 +1,18 @@
-1 The starting screen should have a button that users can click to start the quiz.
-2 Users should be prompted through a series of at least 5 multiple choice questions that they can answer.
-    2.1 Users should be asked questions 1 after the other.
-    2.2 Users should only be prompted with 1 question at a time.
-    2.3 Users should not be able to skip questions.
-3 Users should also be able to see which question they're on (for instance, "7 out of 10") 
-  and their current score ("5 correct, 2 incorrect").
-4 Upon submitting an answer, users should:
-    4.1 receive textual feedback about their answer. If they were incorrect, they should be told the correct answer.
-    4.2 be moved onto the next question (or interact with an element to move on).
-5 Users should be shown their overall score at the end of the quiz. In other words, how many questions they got right 
-  out of the total questions asked.
-6 Users should be able to start a new game.
+Instructions:
+
+    1 The starting screen should have a button that users can click to start the quiz.
+    2 Users should be prompted through a series of at least 5 multiple choice questions that they can answer.
+        2.1 Users should be asked questions 1 after the other.
+        2.2 Users should only be prompted with 1 question at a time.
+        2.3 Users should not be able to skip questions.
+    3 Users should also be able to see which question they're on (for instance, "7 out of 10") 
+      and their current score ("5 correct, 2 incorrect").
+    4 Upon submitting an answer, users should:
+        4.1 receive textual feedback about their answer. If they were incorrect, they should be told the correct answer.
+        4.2 be moved onto the next question (or interact with an element to move on).
+    5 Users should be shown their overall score at the end of the quiz. In other words, how many questions they got right 
+      out of the total questions asked.
+    6 Users should be able to start a new game.
 
 
 Technical Requirements: 
