@@ -1,8 +1,7 @@
-/*
-{
+/* Global */
+*{
   box-sizing: border-box;
 } 
-*/
 
 body{
   font-family: 'Roboto Condensed', sans-serif;
@@ -41,21 +40,6 @@ header{
   color: #2699FB;
 }
 
-/** Main **/
-
-main{
-  display: none;
-  margin-top: 20rem;
-}
-
-.card{
-  border-radius: 10px;
-}
-
-label{
-  font-size: 2rem;
-}
-
 /* Modal Content */
 
 .modal-content{
@@ -74,6 +58,21 @@ label{
 
 .correct-answer{
   color: #2699FB;
+}
+
+/* Main */
+
+main{
+  display: none;
+  margin-top: 20rem;
+}
+
+.card{
+  border-radius: 10px;
+}
+
+label{
+  font-size: 2rem;
 }
 
 /* Results */

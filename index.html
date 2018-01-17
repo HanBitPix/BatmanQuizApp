@@ -9,17 +9,19 @@
 </head>
 
 <body>
+  <!-- Header -->
     <!-- 1 The starting screen should have a button that users can click to start the quiz. -->
-    <header class='container text-center'>
+    <header role="start" class='container text-center'>
         <h2 class='display-4 my-2 text-white'>How well do you know</h4>
-        <img class="img-fluid rounded my-3" id="batman-logo" src="img/batman-logo.png"></img>
+        <img role="img" class="img-fluid rounded my-3" id="batman-logo" src="img/batman-logo.png"></img>
         <h2 class='batman-text display-3'>BATMAN?</h2>
         <p class='text-white mt-2'>Questions will get harder as you progress!</p> 
-        <button type="button" class="start-button btn btn-outline-primary btn-lg d-block mx-auto my-3">START</button>
-    </header>
+        <button role="button "type="button" class="start-button btn btn-outline-primary btn-lg d-block mx-auto my-3">START</button>
+    </header> 
+  <!-- /Header -->
 
-  
-  <!-- // Modal -->
+
+  <!-- Modal Content -->
       <div class="modal-pop">
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
@@ -28,76 +30,88 @@
                 <!-- Dpeneding on answer : switches -->
               </div>
               <div class="modal-footer">
-                <button type="button" class="modal-btn btn btn-secondary btn-block" data-dismiss="modal">Close</button>
+                <button role="button" type="button" class="modal-btn btn btn-secondary btn-block" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
         </div>
       </div> 
+  <!-- /Modal Content -->
 
-    <!-- 2 Users should be prompted through a series of at least 5 multiple choice questions that they can answer.
+
+  <!-- Main 
+       2 Users should be prompted through a series of at least 5 multiple choice questions that they can answer.
           2.1 Users should be asked questions 1 after the other.
           2.2 Users should only be prompted with 1 question at a time.
-          2.3 Users should not be able to skip questions. -->
-    <!-- Question Card -->
-    <main class='container-fluid'>
-      <div class="card text-center col-12 col-xl-6 mx-auto">
-        <!-- This tracks the amount of incorrect and correct questions & the current question number -->
-        <div class="mt-4">
-          <button type="button" class="btn btn-outline-danger">INCORRECT: <span class="incorrectAnswerCounter badge badge-light">0</span></button>
-          <button type="button" class="btn btn-outline-primary mx-3">QUESTION: <span class="question-counter badge badge-light"></span></button>
-          <button type="button" class="btn btn-outline-success">CORRECT: <span class="correctAnswerCounter badge badge-light">0</span></button>
-        </div>
-        <!-- Questions -->
-        <div class="card-body">
-          <!-- Render answer choices in a <form>. -->
-          <form id="target">
-          </form>
-        </div>
-
-
-        
-        <!-- Question #s | Navigation -->
+          2.3 Users should not be able to skip questions. 
+    
+    Question Card -->
+    <main role="main" class='container-fluid'>
+        <div class="card text-center col-12 col-xl-6 mx-auto">
+          <!-- This tracks the amount of incorrect and correct questions & the current question number -->
+          <div class="mt-4">
+            <button role="counter" type="button" class="btn btn-outline-danger">INCORRECT: <span class="incorrectAnswerCounter badge badge-light">0</span></button>
+            <!-- Question Counter -->
+            <button role="counter" type="button" class="btn btn-outline-primary mx-3">QUESTION: <span class="question-counter badge badge-light"></span></button>
+            <button role="counter" type="button" class="btn btn-outline-success">CORRECT: <span class="correctAnswerCounter badge badge-light">0</span></button>
+          </div>
+          <!-- Questions -->
+          <div class="card-body">
+            <!-- Render answer choices in a <form>. -->
+            <form role="form" id="target">
+            </form>
+          </div>
+        <!-- Question #s | Bottom of the card, Shows what question are you on -->
         <div class="m-3">
           <nav aria-label="Page navigation example">
-            <ul class="pagination pagination-lg justify-content-center">
-              <li class="page-item active"><a class="page-link" href="#">1</a></li>
-              <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
-              <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
-              <li class="page-item disabled"><a class="page-link" href="#">4</a></li>
-              <li class="page-item disabled"><a class="page-link" href="#">5</a></li>
-              <li class="page-item disabled"><a class="page-link" href="#">6</a></li>
-              <li class="page-item disabled"><a class="page-link" href="#">7</a></li>
-              <li class="page-item disabled"><a class="page-link" href="#">8</a></li>
-              <li class="page-item disabled"><a class="page-link" href="#">9</a></li>
-              <li class="page-item disabled"><a class="page-link" href="#">10</a></li>
+            <ul role="list" class="pagination pagination-lg justify-content-center">
+              <li role="listitem"class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li role="listitem"class="page-item disabled"><a class="page-link" href="#">2</a></li>
+              <li role="listitem"class="page-item disabled"><a class="page-link" href="#">3</a></li>
+              <li role="listitem"class="page-item disabled"><a class="page-link" href="#">4</a></li>
+              <li role="listitem"class="page-item disabled"><a class="page-link" href="#">5</a></li>
+              <li role="listitem"class="page-item disabled"><a class="page-link" href="#">6</a></li>
+              <li role="listitem"class="page-item disabled"><a class="page-link" href="#">7</a></li>
+              <li role="listitem"class="page-item disabled"><a class="page-link" href="#">8</a></li>
+              <li role="listitem"class="page-item disabled"><a class="page-link" href="#">9</a></li>
+              <li role="listitem"class="page-item disabled"><a class="page-link" href="#">10</a></li>
             </ul>
           </nav>  
         </div>
+        <!-- / Question #s -->
       </div>
     </main>
+  <!-- /Main -->
 
+    <!-- Results | Shows all: User Answers, Correct Answers, & Score -->
     <div class="results container">
-        <table class="table table-dark">
-            <thead>
-              <tr class="final-score">
+        <table role="table" class="table table-dark">
+            <thead role="rowgroup">
+              <tr role="row" class="final-score">
               </tr>
-              <tr>
-                <th scope="col">Question #</th>
-                <th scope="col">Your Answer</th>
-                <th scope="col">Answer Key</th>
+              <tr role="row">
+                <th role="columnheader" scope="col">Question #</th>
+                <th role="columnheader" scope="col">Your Answer</th>
+                <th role="columnheader" scope="col">Answer Key</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody role="rowgroup">
             </tbody>
           </table>
-          <button type="button" class="reset-button btn btn-outline-primary btn-lg d-block mx-auto my-3">START OVER</button>
+          <button role="button" type="button" class="reset-button btn btn-outline-primary btn-lg d-block mx-auto my-3">START OVER</button>
     </div>
+    <!-- /Results -->
 
-   
+  <!-- Jquery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+ 
+  <!-- Javascript files -->
+    <!-- Has the questions + answers -->
     <script type="text/javascript" src="js/qa.js"></script>
+    <!-- Main JS file -->
     <script type="text/javascript" src="js/index.js"></script>  
 </body>
 </html>
