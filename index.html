@@ -11,19 +11,19 @@
 <body>
   <!-- Header -->
     <!-- 1 The starting screen should have a button that users can click to start the quiz. -->
-    <header role="start" class='container text-center'>
+    <header role="banner" class='container text-center'>
         <h2 class='display-4 my-2 text-white'>How well do you know</h4>
-        <img role="img" class="img-fluid rounded my-3" id="batman-logo" src="img/batman-logo.png"></img>
+        <img role="img" class="img-fluid rounded my-3" id="batman-logo" src="img/batman-logo.png" alt="Picture of a Batman Logo"></img>
         <h2 class='batman-text display-3'>BATMAN?</h2>
         <p class='text-white mt-2'>Questions will get harder as you progress!</p> 
-        <button role="button "type="button" class="start-button btn btn-outline-primary btn-lg d-block mx-auto my-3">START</button>
+        <button role="button" type="button" class="start-button btn btn-outline-primary btn-lg d-block mx-auto my-3">START</button>
     </header> 
   <!-- /Header -->
 
 
   <!-- Modal Content -->
       <div class="modal-pop">
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-body text-center modal-image">
@@ -46,14 +46,14 @@
           2.3 Users should not be able to skip questions. 
     
     Question Card -->
-    <main role="main" class='container-fluid'>
+    <main class='container-fluid'>
         <div class="card text-center col-12 col-xl-6 mx-auto">
           <!-- This tracks the amount of incorrect and correct questions & the current question number -->
           <div class="mt-4">
-            <button role="counter" type="button" class="btn btn-outline-danger">INCORRECT: <span class="incorrectAnswerCounter badge badge-light">0</span></button>
+            <button role="button" type="button" class="btn btn-outline-danger">INCORRECT: <span class="incorrectAnswerCounter badge badge-light">0</span></button>
             <!-- Question Counter -->
-            <button role="counter" type="button" class="btn btn-outline-primary mx-3">QUESTION: <span class="question-counter badge badge-light"></span></button>
-            <button role="counter" type="button" class="btn btn-outline-success">CORRECT: <span class="correctAnswerCounter badge badge-light">0</span></button>
+            <button role="button" type="button" class="btn btn-outline-primary mx-3">QUESTION: <span class="question-counter badge badge-light"></span></button>
+            <button role="button" type="button" class="btn btn-outline-success">CORRECT: <span class="correctAnswerCounter badge badge-light">0</span></button>
           </div>
           <!-- Questions -->
           <div class="card-body">
